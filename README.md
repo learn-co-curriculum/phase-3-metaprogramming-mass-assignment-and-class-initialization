@@ -104,7 +104,7 @@ instance_of_user = User.new
 instance_of_user.name = "Sophie"
 ```
 
-### A Closer Look at `.send` work?
+### A Closer Look at `.send`
 
 The `.send` method is just another way of calling a method on an object. For example, we know that instances of the User class have a `.name=` method that allows us to set the name of a user to a particular string: 
 
