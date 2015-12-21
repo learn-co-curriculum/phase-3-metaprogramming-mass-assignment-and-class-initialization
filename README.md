@@ -8,7 +8,7 @@
 
 You might recall that metaprogramming is the practice of writing code that writes code for us. So, what does that have to do with mass assignment? Let's revisit our Twitter API challenge from an earlier lesson. We've learned that we can write a Ruby program that sends a web request to an API and returns particular data to the program. 
 
-Let's say we want to use the Twitter API to create users for our own application. The scenario is that we are developing a web application and we want our users to be able to sign in via Twitter. Thus, our own user's are pulled from Twitter and we need to take the data we get from Twitter––for example a user's name, age and location, and use them to make instances of our own User class. Let's take a look at a code snippet: 
+Let's say we want to use the Twitter API to create users for our own application. The scenario is that we are developing a web application and we want our users to be able to sign in via Twitter. Thus, our own users are pulled from Twitter and we need to take the data we get from Twitter––for example a user's name, age and location, and use them to make instances of our own User class. Let's take a look at a code snippet: 
 
 
 ```ruby
