@@ -144,5 +144,3 @@ With this pattern, we have made our code much more flexible. We can easily alter
 
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/mass-assignment-metaprogramming' title='Mass Assignment as Metaprogramming'>Mass Assignment as Metaprogramming</a> on Learn.co and start learning to code for free.</p>
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/mass-assignment-metaprogramming'>Mass Assignment and Metaprogramming</a> on Learn.co and start learning to code for free.</p>
