@@ -140,9 +140,6 @@ This is exactly what's happening in our initialize method in the example above, 
 
 ## Why is this useful?
 
-With this pattern, we have made our code much more flexible. We can easily alter the number of attributes in the class and change the hash that we initialize the class with, *without editing our initialize method.* Now, we're programming for the future. If and when that data with which we want to initialize our class changes, we *only have to change our attr_accessors*. Our initialize method is flexible and we can leave it alone. That is one major goal of design in object oriented programming––the writing of code that accommodates future change, the writing of code that doesn't require a lot of modification, even as it grows.
-
+With this pattern, we have made our code much more flexible. We can easily alter the number of attributes in the class and change the hash that we initialize the class with, *without editing our initialize method.* Now, we're programming for the future. If and when that data with which we want to initialize our class changes, we *only have to change our attr_accessors*. Our initialize method is flexible and we can leave it alone. That is one major goal of design in object oriented programming––the writing of code that accommodates future change and doesn't require a lot of modification, even as it grows.
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/mass-assignment-metaprogramming' title='Mass Assignment as Metaprogramming'>Mass Assignment as Metaprogramming</a> on Learn.co and start learning to code for free.</p>
-
-<p class='util--hide'>View <a href='https://learn.co/lessons/mass-assignment-metaprogramming'>Mass Assignment and Metaprogramming</a> on Learn.co and start learning to code for free.</p>
