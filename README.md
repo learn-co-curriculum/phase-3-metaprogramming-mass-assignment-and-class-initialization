@@ -61,7 +61,7 @@ User.new(newest_twitter_user)
 => ArgumentError: unknown keyword: bio
 ```
 
-Our program breaks! Clearly, we need a way to *abstract away* our User class' dependency on specific attributes. If only there was a way for us to tell our User to get ready to accept some unspecified number and type of attributes.
+Our program breaks! Clearly, we need a way to *abstract away* our User class' dependency on specific attributes. If only there were a way for us to tell our User to get ready to accept some unspecified number and type of attributes.
 
 ## Mass Assignment and Metaprogramming
 
