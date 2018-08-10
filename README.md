@@ -36,7 +36,7 @@ sophie = User.new(twitter_user)
  => #<User:0x007fa1293e68f0 @name="Sophie", @age=26, @user_name="sm_debenedetto", @location="NY, NY">
 ```
 
-So far so good. But, what if Twitter changes their API without telling us? (How could they? Don't they know who we are?). After all, we are not in charge of Twitter or their API, they can do whatever they want, whenever they want, with no regard to our application which relies on their data. Let's say Twitter makes a change that we're unaware of. Now when we request data from their API, we get this return value:
+So far so good. But, what if Twitter changes their API without telling us? (How could they? Don't they know who we are?) After all, we are not in charge of Twitter or their API, they can do whatever they want, whenever they want, with no regard to our application which relies on their data. Let's say Twitter makes a change that we're unaware of. Now when we request data from their API, we get this return value:
 
 ```ruby
 new_twitter_user = twitter_user = {name: "Sophie", user_name: "sm_debenedetto", location: "NY, NY"}
