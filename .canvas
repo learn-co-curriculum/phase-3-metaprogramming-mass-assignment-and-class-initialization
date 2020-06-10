@@ -1,0 +1,6 @@
+---
+:lessons:
+- :id: 6738
+  :course_id: 328
+  :canvas_url: https://learning.flatironschool.com/courses/328/pages/ruby-metaprogramming-mass-assignment-and-class-initialization
+  :type: page
