@@ -138,8 +138,40 @@ sophie.send("#{method_name}=", value)
 
 This is exactly what's happening in our initialize method in the example above, where `self` refers to the User instance that is being initialized at that point in time.
 
+## Taking things further: dynamically setting getters and setters
+
+Let's say we didn't want to specify the individual getter and setter methods using named symbols like so:
+
+```ruby
+class User
+  # we don't want to do this anymore :(
+  attr_accessor :name, :user_name, :age, :location, :bio
+
+  def initialize(attributes)
+    attributes.each {|key, value| self.send(("#{key}="), value)}
+  end
+end
+```
+
+Instead we want to dynamically set those methods so that we have a getter and setter automatically declared for every attribute in the `attributes` Hash. How could we do this?
+
+First, we need to remember that `attr_accessor` is a class method just like `attr_reader` and `attr_writer`. This means we can dynamically add getters or setters, or both, by doing the following:
+
+```ruby
+class User
+  def initialize(attributes)
+    attributes.each do |key, value| 
+      self.class.attr_accessor(key)
+      self.send(("#{key}="), value)
+    end
+  end
+end
+```
+
+By making that one small change, we can now get and set every attribute on an object instantiated from `User`.
+
 ## Why is this useful?
 
-With this pattern, we have made our code much more flexible. We can easily alter the number of attributes in the class and change the hash that we initialize the class with, *without editing our initialize method.* Now, we're programming for the future. If and when that data with which we want to initialize our class changes, we *only have to change our attr_accessors*. Our initialize method is flexible and we can leave it alone. That is one major goal of design in object oriented programming––the writing of code that accommodates future change and doesn't require a lot of modification, even as it grows.
+With this pattern, we have made our code much more flexible. We can easily alter the number of attributes in the class and change the hash that we initialize the class with, *without editing our initialize method.* Now, we're programming for the future. Our initialize method is flexible and we can leave it alone. That is one major goal of design in object oriented programming––the writing of code that accommodates future change and doesn't require a lot of modification, even as it grows.
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/mass-assignment-metaprogramming' title='Mass Assignment as Metaprogramming'>Mass Assignment as Metaprogramming</a> on Learn.co and start learning to code for free.</p>
