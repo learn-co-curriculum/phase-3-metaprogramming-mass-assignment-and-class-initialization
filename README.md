@@ -1,4 +1,4 @@
-# Mass Assignment as Metaprogramming
+# Mass Assignment and Class Initialization
 
 ## Objectives
 
