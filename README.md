@@ -39,10 +39,10 @@ sophie = User.new(twitter_user)
 So far so good. But, what if Twitter changes their API without telling us? (How could they? Don't they know who we are?) After all, we are not in charge of Twitter or their API, they can do whatever they want, whenever they want, with no regard to our application which relies on their data. Let's say Twitter makes a change that we're unaware of. Now when we request data from their API, we get this return value:
 
 ```ruby
-new_twitter_user = twitter_user = {name: "Sophie", user_name: "sm_debenedetto", location: "NY, NY"}
+new_twitter_user = {name: "Sophie", user_name: "sm_debenedetto", location: "NY, NY"}
 ```
 
-Notice that the `twitter_user` no longer has an age.  Let's see what happens if we try to create new Users using the same old User class code:
+Notice that the `new_twitter_user` no longer has an age.  Let's see what happens if we try to create new Users using the same old User class code:
 
 ```ruby
 User.new(new_twitter_user)
