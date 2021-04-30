@@ -1,8 +1,8 @@
 # Mass Assignment and Class Initialization
 
-## Objectives
+## Learning Goals
 
-1. Understand how to use mass assignment to metaprogram a Ruby class.
+- Understand how to use mass assignment to metaprogram a Ruby class
 
 ## Introduction
 
