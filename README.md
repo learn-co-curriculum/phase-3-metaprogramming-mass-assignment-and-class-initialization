@@ -46,7 +46,7 @@ Notice that the `new_twitter_user` no longer has an age.  Let's see what happens
 
 ```ruby
 User.new(new_twitter_user)
-=>ArgumentError: missing keyword: age
+=> ArgumentError: missing keyword: age
 ```
 Our program broke! Let's play it with another scenario. Let's say the Twitter API changed and now returns data to us in the following manner:
 
