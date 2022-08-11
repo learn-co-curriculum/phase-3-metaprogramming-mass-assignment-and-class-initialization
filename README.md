@@ -243,5 +243,4 @@ as it grows.
 
 ## Resources
 
-- [Ruby Metaprogramming](http://ruby-metaprogramming.rubylearning.com/html/ruby_metaprogramming_2.html)
 - [What Does Send Do In Ruby?](https://stackoverflow.com/questions/3337285/what-does-send-do-in-ruby)
